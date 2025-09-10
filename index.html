@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <style>
+      .all {
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+      }
+      .top {
+        width: 400px;
+        height: 400px;
+      }
+      .main-img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        cursor: pointer;
+        overflow: hidden;
+      }
+      .overlay {
+        background-color: rgb(150, 17, 17);
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+
+      .all:hover .overlay {
+        opacity: 1;
+      }
+      .b-all {
+        display: flex;
+        gap: 140px;
+        flex-direction: row;
+      }
+      body {
+        background-color: hwb(216 5% 83%);
+      }
+      .creation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 5px;
+        gap: 10px;
+        color: hsl(0, 0%, 100%);
+      }
+      .aa {
+        color: hsl(0, 0%, 100%);
+      }
+      .b {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 5px;
+        gap: 10px;
+        color: hsl(178, 100%, 50%);
+      }
+      .b img {
+        width: 15px;
+        height: 20px;
+      }
+      .bb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 5px;
+        gap: 10px;
+        color: hsla(0, 0%, 100%, 0.348);
+      }
+      .bb img {
+        width: 15px;
+        height: 20px;
+      }
+      .span {
+        color: rgba(240, 248, 255, 0.543);
+      }
+    </style>
+    <title>nft</title>
+  </head>
+  <body>
+    <div class="all">
+      <div class="top">
+        <img
+          class="main-img"
+          src="image-equilibrium.jpg"
+          alt="image"
+          width="350"
+        />
+        <div class="overlay">
+          <img src="images/icon-view.svg" />
+        </div>
+      </div>
+      <div class="aa">
+        <h1>Equilibrium #3429</h1>
+      </div>
+      <div class="span">
+        <span>Our Equilibrium collection promotes balance and calm.</span>
+      </div>
+      <div class="b-all">
+        <div class="b">
+          <img src="icon-ethereum.svg" alt="" />
+          <p>0.041 ETH</p>
+        </div>
+        <div class="bb">
+          <img src="icon-clock.svg" alt="" />
+          <h3>3 days left</h3>
+        </div>
+      </div>
+      <hr width="350px" />
+      <div class="creation">
+        <img src="image-avatar.png" width="30" />
+        <h4>Creation of Jules Wyvern</h4>
+      </div>
+    </div>
+  </body>
+</html>
